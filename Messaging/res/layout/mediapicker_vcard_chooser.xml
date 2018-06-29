@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/location_framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/vcard_quote_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Put some quote or slogan here"
+            android:textSize="18sp"
+            android:textColor="@color/primary_color"
+            android:textAlignment="center"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/whyweuse_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—— This is why we use "
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primary_color"
+            android:textSize="15sp"
+            android:layout_below="@id/vcard_quote_tv"/>
+
+        <ImageView
+            android:id="@+id/icon_under_slogan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_launcher"
+            android:layout_below="@id/vcard_quote_tv"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/whyweuse_tv"
+            android:layout_marginLeft="5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/pick_contact_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pick_vcard_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/pick_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Pick and Share Contact Info"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/missing_permission_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/enable_permission_procedure"
+        android:contentDescription="@string/enable_permission_procedure_description"
+        android:visibility="gone"/>
+
+
+
+</FrameLayout>

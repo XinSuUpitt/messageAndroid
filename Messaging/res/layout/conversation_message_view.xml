@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2015 The Android Open Source Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<com.messagecube.messaging.ui.conversation.ConversationMessageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/ConversationMessageViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <com.messagecube.messaging.ui.ContactIconView
+        android:id="@+id/conversation_icon"
+        android:layout_width="@dimen/conversation_message_contact_icon_size"
+        android:layout_height="@dimen/conversation_message_contact_icon_size"
+        app:iconSize="normal"
+        android:clickable="true"
+        android:layout_gravity="center_vertical"
+        android:importantForAccessibility="no" />
+
+    <com.messagecube.messaging.ui.conversation.ConversationMessageBubbleView
+        android:id="@+id/message_content"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/message_attachments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- Video, audio and vcard attachments (if present) will be added here -->
+
+            <com.messagecube.messaging.ui.MultiAttachmentLayout
+                android:id="@+id/multiple_attachments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.messagecube.messaging.ui.AsyncImageView
+                android:id="@+id/message_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="@dimen/conversation_message_photo_min_size"
+                android:minHeight="@dimen/conversation_message_photo_min_size"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone"
+                app:placeholderDrawable="@drawable/attachment_image_placeholder_background"
+                app:cornerRadius="@dimen/attachment_rounded_corner_radius"
+                android:contentDescription="@string/message_image_content_description" />
+
+        </LinearLayout>
+
+        <com.messagecube.messaging.ui.conversation.MessageBubbleBackground
+            android:id="@+id/message_text_and_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffff00"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/message_title_layout"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:importantForAccessibility="noHideDescendants" >
+
+                <TextView
+                    android:id="@+id/message_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ConversationMessageTitle" />
+
+                <TextView
+                    android:id="@+id/mms_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ConversationMessageInfo" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subject_container"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="noHideDescendants" >
+
+                <TextView
+                    android:id="@+id/subject_label"
+                    android:text="@string/conversation_message_view_subject_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ConversationMessage" />
+
+                <TextView
+                    android:id="@+id/subject_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ConversationMessage" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/message_text"
+                style="@style/ConversationMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:importantForAccessibility="no" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.messagecube.messaging.ui.LineWrapLayout
+                    android:id="@+id/message_metadata"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:importantForAccessibility="noHideDescendants" >
+
+                    <TextView
+                        android:id="@+id/message_sender_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        style="@style/ConversationMessageStatus"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/message_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/ConversationMessageStatus"
+                        android:visibility="gone" />
+                    <TextView
+                        android:id="@+id/sim_name"
+                        style="@style/MessageSimIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:visibility="gone" />
+                    <ImageView
+                        android:id="@+id/smsDeliveredBadge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        style="@style/SmsDeliverdBadge"
+                        android:src="@drawable/ic_sms_delivery_ok"
+                        android:visibility="gone" />
+                </com.messagecube.messaging.ui.LineWrapLayout>
+
+                <ImageView
+                    android:id="@+id/contact_card"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/account_plus"
+                    android:visibility="visible"/>
+
+
+            </RelativeLayout>
+
+
+        </com.messagecube.messaging.ui.conversation.MessageBubbleBackground>
+
+    </com.messagecube.messaging.ui.conversation.ConversationMessageBubbleView>
+
+
+    <com.messagecube.messaging.ui.conversation.ConversationMessageSearchScrollView
+        android:id="@+id/search_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/background_item_transparent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/translucent_white"
+            android:id="@+id/search_scroll_view">
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Item 0 -->
+                <!-- Item 0 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_0"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_0_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_0_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_0_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_0_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_0_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_0_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_0_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_0_yelp_category"
+                                android:layout_marginLeft="39dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <!-- Item 1 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_1"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_1_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_1_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_1_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_1_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_1_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_1_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_1_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_1_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!-- Item 2 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_2"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_2_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_2_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_2_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_2_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_2_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_2_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_2_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_2_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <!-- Item 3 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_3"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_3_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_3_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_3_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_3_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_3_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_3_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+                            <RatingBar
+                                android:id="@+id/web_search_3_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_3_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Item 4 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_4"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_4_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_4_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_4_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_4_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_4_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_4_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_4_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_4_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Item 5 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_5"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_5_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_5_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_5_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_5_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_5_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_5_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_5_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_5_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <!-- Item 6 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_6"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_6_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_6_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_6_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_6_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_6_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_6_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_6_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_6_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <!-- Item 7 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_7"
+                    android:background="#ffffff">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_7_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_7_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_7_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_7_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_7_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_7_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_7_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_7_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!-- Item 8 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_8"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_8_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_8_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_8_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_8_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_8_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_8_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_8_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_8_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Item 9 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="150dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_9"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_9_image" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_9_profile_image" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_9_name"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_9_snippet"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_9_price"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_9_salePrice"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_9_ratingBar"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_9_yelp_category"
+                                android:layout_marginLeft="39dp"
+
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    </com.messagecube.messaging.ui.conversation.ConversationMessageSearchScrollView>
+
+    <com.messagecube.messaging.ui.conversation.ConversationMessageForwardView
+        android:id="@+id/forward_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_item_transparent" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_scroll_view_forward">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/search_scroll_linear_layout_forward">
+
+                <!-- Item 0 -->
+                <!-- Item 0 -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="170dp"
+                    android:layout_height="180dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/webSearch_0_forward"
+                    android:background="#ffffff">
+
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:scaleType="centerCrop"
+                            android:id="@+id/webSearch_0_image_forward" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:scaleType="centerCrop"
+                                    android:id="@+id/webSearch_0_profile_image_forward" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:id="@+id/webSearch_0_name_forward"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:lines="1"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    android:textColor="@color/primary_text_default_material_light" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="5"
+                                android:id="@+id/webSearch_0_snippet_forward"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="45dp"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_0_price_forward"
+                                    android:layout_marginLeft="50dp"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="@color/message_text" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:ems="5"
+                                    android:id="@+id/webSearch_0_salePrice_forward"
+                                    android:layout_marginTop="3dp"
+                                    android:textSize="12sp"
+                                    android:textColor="#FF6347" />
+
+                            </LinearLayout>
+
+                            <RatingBar
+                                android:id="@+id/web_search_0_ratingBar_forward"
+                                style="?android:attr/ratingBarStyleSmall"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="3dp"
+                                android:layout_marginLeft="35dp"
+                                android:isIndicator="false"
+                                android:numStars="5"
+                                android:rating="5.0"
+                                android:scaleX="1"
+                                android:scaleY="1"
+                                android:progressTint="@android:color/holo_red_light"
+                                android:transformPivotX="5dp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:ems="10"
+                                android:id="@+id/webSearch_0_yelp_category_forward"
+                                android:layout_marginLeft="39dp"
+                                android:textSize="10sp"
+                                android:textColor="@color/message_text" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </com.messagecube.messaging.ui.conversation.ConversationMessageForwardView>
+
+</com.messagecube.messaging.ui.conversation.ConversationMessageView>

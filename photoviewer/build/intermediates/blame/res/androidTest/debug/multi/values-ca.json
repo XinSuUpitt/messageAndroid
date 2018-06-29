@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "/Users/suxin/Desktop/MessageCube_SMS/photoviewer/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ca/values-ca.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 105,
+                    "endColumn": 98,
+                    "endOffset": 199
+                },
+                "from": {
+                    "file": "/Users/suxin/Desktop/MessageCube_SMS/photoviewer/build/intermediates/bundles/debug/res/values-ca/values-ca.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 105,
+                        "endColumn": 98,
+                        "endOffset": 199
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 204,
+                    "endColumn": 141,
+                    "endOffset": 341
+                },
+                "from": {
+                    "file": "/Users/suxin/Desktop/MessageCube_SMS/photoviewer/build/intermediates/bundles/debug/res/values-ca/values-ca.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 204,
+                        "endColumn": 141,
+                        "endOffset": 341
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 346,
+                    "endColumn": 81,
+                    "endOffset": 423
+                },
+                "from": {
+                    "file": "/Users/suxin/Desktop/MessageCube_SMS/photoviewer/build/intermediates/bundles/debug/res/values-ca/values-ca.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 346,
+                        "endColumn": 81,
+                        "endOffset": 423
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 428,
+                    "endColumn": 128,
+                    "endOffset": 552
+                },
+                "from": {
+                    "file": "/Users/suxin/Desktop/MessageCube_SMS/photoviewer/build/intermediates/bundles/debug/res/values-ca/values-ca.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 428,
+                        "endColumn": 128,
+                        "endOffset": 552
+                    }
+                }
+            }
+        ]
+    }
+]

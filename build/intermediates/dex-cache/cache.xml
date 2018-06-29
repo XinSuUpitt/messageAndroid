@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/01cf684b38e957bcce61b1cffd66b458c48faa54/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_aaaae3d68918b9cf6558e8d7e3c4567f9d5166d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/0ea05e40107be1aa794472766a6771e4e2b37706/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="34c23b5894b4f24d566bfc33e0e25462c6436b78">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e4cfbb2187bfa2826b87ff4a7e1f9bc8e4d1c781/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/c3e8c8744e04287171fae179ed232585ad3770be/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="461929440e66685425a298693507f6fb27b0a872">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3a48bb153436e40c4f601fa9b40952cdae0d119f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/8104164652509c3a852a42de709cfe8752499cf9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1b12397bc9f342b29d9e9108978828f99a6da579">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8436b16c001451299ba1620a28520eec23838d8d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/90319c7c145fd161919a86ece83df7a982bc7e9c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2f68522ebd80ff7e529e08aaca6208049112ba03">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5b9b315506c7fa7b0138b2dbc363fe51cad3ca9c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/2acf52286fa33c5809c424c6da2e0e7987422f45/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c379c235d7983201bb83edfc3c60bb0dafb5805">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8f0f639204eedc01f87cc54f948921e12b095c91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/88956121bbf4fe31f1400b6afd459c536c5d855e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f5ff5e3811e8c9485fd27f9052ae4d4d23a22d9d">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1079d0eeeb1c3166d51278857fb8a07602f9153a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/ae32d726e73fd06ac4bebc4b654abd9faf35182a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a5d52089bf4d31537232bb6bcb70cee817d8a374">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_52bfb47d3076dd24a4d0c04d9c3bdd255d75fd1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/e06b1ea46e88529b7b9afbc8c9a2bf8cea036b8e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="76ea35b41786082af23db898ca9e0fc07cc71fb9">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0a679327304cf13e2a6f7dc3dde8f4bd45b8a4df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/4722a61c974acb096a7f949ed7b3060d1f063216/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="377c5f26ebf67f3fa6ef2f663a58cac7ce647dde">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a85b349cdb63772833001e8ce0642b6cbc300484/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/6a8b7b84186284ccf1b1c3a2872cc29ee7f7caae/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf39d880f87c2a6bb1ee7458e7724b3644dec353/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/20ae32df20f4e5d1fc5c202d89c29d945c8ad2d5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c5e6490573cd2cc8018417f60ddd251138b6ed61">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a4596f2da849f9ea5104b7c6dffc87f10bff8f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/cf73a2a9e464dfa2b580546d60aa25ff6dc86df2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fc3036436defd3070337b7191c50a136ebca7f8f">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_96e45530bec765531f93441e1097733b1c12a879/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/18fb4613d9441fac72caa4760ff5d6b42dba3788/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="646439081688c43e04ec4aa7ba6915ddfdcc337f">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_eae32dcf84d942bea61760154dc55779ad1059bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/f678a6ca339f30c6830be2e8bb128c3e64e9a331/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d6d9f9682c70194e26a2dae860253a46bd18f82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/54c9a21b2e0a4c6487a6f732451f6d875e3b647d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2a091376bd3652fd512bd90174dccc282efd6a66/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/82e1d917ade1db61eb402cdb5ae00c2baeae3cb6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_548e940946f608fd92248d8d3d8401de7abc3b43/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/0b7a51d28438eec7e13fe106d9b3cee9fd1a09ae/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c175c3009577fad8b433703f5d7ac2dc21d3871f">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82efa9731cb94f5151aac3470ce3772856b12faf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/11290912230168c7fc5f476baba9dbbcf655ee96/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a25b0b5aec89681b95d32780ad7904c1e1e4c679">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_88b5e09a7f9d234acf5d30292401404a13bad547/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/decd8807df966c3bbc482570b9fc9ab1108b8175/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad2c0c3da14e28a89484878a8cd685a613a88bd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/707ead7e189a4331ff73107b8bd393aff36961f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c3df2b74d33ff7935ecbc9e3896933b7cbe30061/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/5fcc1e17036d11414e32934c5c9d60b43917fed9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_465102b67b9bd0d0c87fc65677108e1be17da149/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/5e09eaf76d3e2fa8e362f9108d3e96ab5cc7c364/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="eea424e61a0c85b93a0e477565314a58136abaea">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ab5bb2fa53a9c838f31ff2eb49ecd333d29c6b8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/e2a3ad0ad1473a264fdc5882537a1ea8ad3ef557/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c72b1515efbd8ad652e2d63582c8234a979b1e53">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_027bcb06afa442bbb4ac93aaea3e178b2a6ccce1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/9eed0341b32bef763ccc727f1266e6f289a9b3a5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8544f739799dd15db63927073a21312864ab0bfd">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6fa96eae68a50ddaa9e18e4eab311da5dec680ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/50d436a396ffab7a1fcf4fdb4f9a1fb91cf5efc4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9be5e957849eb82ad9addf9bdb2896de8bf5654b">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bdee967931f234a88719c70532e4270bccf7fa1e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_0cf1e9889f62b6e1fd8027b24a7753cfce18032e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b6a71b01a880c3ec7e88e5b016bd03b4f27dbe97/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="204f607419af8247cc1b2a61f50663c65f841c12">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e1e72c848ba5047addd2f695d330a32cb35cd714/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="db09295d8d9a33e7586ec6a97f8e434f2e4be25e">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_98d35fb1e0eeadb81b10ea5faac26de10abdc9f4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/1.3.9/40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf/jsr305-1.3.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/jsr305-1.3.9_1fb8bcb881dc46155489c9cbb5bff57100cbb7ad/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/01de23276eba3420e0dd56d3db342e76789ad0a3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c2f1b3f82c027e98f56bb0154de0acbcce42e6d">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a05a414df02a86775c3bb9bb8a54530bc2dc0ee0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="775b7e22fb10026eed3f86e8dc556dfafe35f2d5">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/animal-sniffer-annotations-1.14_3525dedd0b2955d1df254603230c80dbb185b26f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/79af9c67cc7fae145e4542c6e6ef2a86a78b0544/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c6aa915c08cfd82780c10d4b957018bf819a48e2">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_844e0e45c45c4e8c4a802e4ee2a66a50b886cf56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/c239662b63380989d151bf973b9565a6df8c5f0e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4a20439c39463f98ca485bd2a19489052746bef5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/ceff5eef84e199de2aedc12f65be978fa628d3d8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_16b43ecc9029e0269523fcaa1a5d7f6bee9d3116/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/4f77ca52f9c48a51abd08888a5c53cbb31bdb5dd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f15e20dd7bcde7c688cfda44d0c8320a5c1c24b8">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bbbc35ef28a31a36bf69af668861985dd24ad035/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/521c3d59a5f815aecbed84a803ae6a12ecef6bdc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="02b91f8efa91dcdf5c555ee24b7f006f02cd0f8b">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_09a3df9df8c95e19f372e455e58f48f35857ec17/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/d7af6854468fd6bd65a9f3bf68ad46cc0e47545c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bfba7cf662f7e3e2cfeb92226c6b84c08e590225">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_885e5007b462494a3c5cbbe9ff88fca27262f6fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.0.18/5f65affce1684999e2f4024983835efc3504012e/error_prone_annotations-2.0.18.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5f65affce1684999e2f4024983835efc3504012e">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/error_prone_annotations-2.0.18_e771ae0526e832f75dfdbc8c4102785269b0512c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/5dd645d2a2eb95750f940a9ac967370042ac9afa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4b685077cdb08cf7ae8b61afd1fe910e47d91b9a">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e415942cea97836663908907764514313fc7d8f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/a2045b6ad09ccaa38db77aa2603ac3567d09ef15/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_cf70cda2520063221693cccbfda7d017e954865d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b359685f461f47a44f037d4e1145207322f2bfc1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="56d68d1174b9c1e368017a850b62b12429f39757">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2e23f60cc0e6981abfb8822018f77387c10ecced/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_4861d8839c647fcdb14d51483306e7e42bd53cc5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/0b9317fa7645f00589f594dcc9318ff3803b5417/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c07fb99b729345908dda75fadbbf882e300631ff">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_564ca3477515ec8ebdbc1c1361d19c4a052572c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/23.0-android/24e15a141252eb80c53381d78ef61efd1353763/guava-23.0-android.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="024e15a141252eb80c53381d78ef61efd1353763">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/guava-23.0-android_70dfe606840fc15c18e4a72bc3bc42ce3b5894ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/4888cff46a10145c8b54cbe7a749c41d04d7743e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ffd0ddf5e57b4d60c4a3fbcd38fa20349a0cebd1">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9b6ac83065228fb2b2176765636c15a792b663d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/3290cca76b42c747aae4e539adfed4f3e6ba18a0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8d136412762d675fd2b5318ede5dcd99ef696489/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/a1c232918679fb6daeed1aff2955e02a10156f5c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d47aac42c2fbac126d4dd563b551ce5b61e5109e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.inmobi.monetization/inmobi-ads/7.0.0/b09e23e93656a325bb5fbe86d9c2e6452a2a4777/inmobi-ads-7.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b09e23e93656a325bb5fbe86d9c2e6452a2a4777">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/inmobi-ads-7.0.0_6b08ffedb88698ee7327bfb83f5018f22d3979e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/f7e0c49fef71923dc0fa7596c93c4bcc7594809b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c8bf878c09bf0df6ae76eb6c2df38c6a186b38b7">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9ef9b056447d860fad2e08a086eddd3f927fff09/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b9081138347034b7cd65d156144ac5a567d4e9ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6b47e3911b1aad275ef353124379b7cec821302a">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3e749793a0f1dde920f22307970f76b192f397f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/3a16da39d9bac8e39c6911fe6551b1ff83497028/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c6706cc7c8c3093560edd55d322218afe7798aa9">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0806806bd135057ba8182fc03602f8233caf1ce7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/glide-3.7.0_68dad5355fb6fb1fad18ac6290353d5146fe7635/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/acbd21be16b4f001fa181013cbdebbe0dff3fcd0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="416fb9ee2fd6e7af0bba04b01d90cb475b1e2074">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fa6fec65fa336ef3729f875e68b5fdaa379f7b7e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/abcc352f0e2c5546b73a918aa5f2c40462ae5447/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f2cb88e7e28736d44e7e643deb80c9af1c3662c8">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a869f4ffd01830a8df6e72bc96c895cd05e9c58/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/28de30e4829b5bf37c2f6c5f39234a9c4261d32b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_931883926563372844980250645849d303e246c7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/4b644654dee2a3498d1e1a53b9b2471192e47c7e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="576570f46ff6ccc69a984af9e55ddd58d9549270">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_90c6eea276ee5924f9874ecc2866224619ea933e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/acca43e037181c4f03e9e337e6bb43c295cd119f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63b03eaa1aa9b9431c7638841175f9842dcbf274">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b3de734b53aff408a2f892ba6809990410645eb4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b8523e8b4197be8f986281ba5da8dbd12e52abea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="43e9789bd3240271265ab30ce1be9f224843f5a8">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e3916c790c40ddc96f83d2b8515972cb34e7ccb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b3bde0507cbf7ac10f2ad832ff1587476d372165/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0bffdc0bd4f7ca0e27c5bfeef39569f8da00aa26">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_702f4fc6ee034837b39c42cdc30bb122fdb57720/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="976d8d30bebc251db406f2bdb3eb01962b5685b3">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/j2objc-annotations-1.1_4374b64a4f48a2e4966c9d1ff0d2623dabac4478/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/634234f0fdc08d0f5812bd3156df12f4ca953f54/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b3907ac800580c06be698e086490d8a31fa43141/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/63686751c984ad0b06f44cda1fb52be755786a93/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="057fb316bed8467398333f30926c2d5506e275b2">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7903e085c885762217da4b81a2d7ef017cd0d87a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/c4a5b0a746b167f8477deaf95291d016047fd0bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c1b91bc7e480ab100d0397b16c93732e26fd10eb">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_790f98cdd8caf6ecf6c5b1666fbfd21dd7f64533/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/feb68f9fcac94b98618aa1d194b8a68304b806de/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5594a368622908d89c47d9a391aa2724fe046c35">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ed22e4f96bbbc67c7234b3e72b527139a0a02d48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/98f813cc1af70bf429fc13ef0757e18947a42930/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7045152f3bd1870740b9bcb1cddff495e189774e">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1b3e36813640a7866182be1dbadef14b3ae619f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/b626c75e940bb7100e6c8c4acc6be75bc33b3006/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e7f890dd2539b7f2582f450f0721e2dea6ae510c">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3d58ab00644cc0a925035a52954709ecae31e435/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/070d200fca11fedcb070e8882d543fdac402d50c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ff3b04ceaa8d6bec4c6073a3c0f793f848c284bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/3c5f8154cf71ff2f67daf818fe7ad382b8970d7f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_337878a78072f8fca3761de56212e37a7c72c5a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/f58ee061ce811b9206c0c4e94b0e09f4bd3a7f7b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2b12b18c5518021cc71577c83d1290f8ddaa3c98">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_46b239f3b491674b2fe144d99718be0f7aaf20c3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/2e7e376d2f5d54f0a35febc37dbe1ec91733ef89/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_44400eb99d20379d160a944b4a55d1fe25269e88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/19927ea4f7cc86c4235c9da57d3f4574bd404d28/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2151ae8b7ab163e4e07801cac6a8821ea24b72e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/5e51f1beb42829be7638a85134df51e38f2714c9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dae0d68af4c87df40eca67069861e53b7cefaaa0">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_8bdac447ca087576d4625a07852958f873d8709d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_26bfff12d819961236e01bbe5c785cd774658ab3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/a9acd787f7c4d17e615a85785fd6f00548b5f143/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_43cb0c94b2c88563350319db448eb2546168bfc0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/4bf8a371285d5b6629727d6fba20515081404bf7/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b5b6af36bacf1d812cd3dc45f9dcab9ea471ed91">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_68bcf6e9c2cfc6f2caf20164d3cbff2680ad2938/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/81a5d4226ed176c19f5577878b3642e0be04fefc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="005d20a198159b87f65812fc5c51b2d84c5eba0a">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f0b411a454bcfb605cbe6c7e3d05694adf18825/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/3013d6fd879ab070b11da62fc49e71f57f97a1ff/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7c24e2e9773fb498e390ce973db382c3ddcf748e">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_69adc6c28e035de2d62e8da3e9f14e7bef97e486/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/c09bf54d1440ec5d38bdb244e59a526e3a970d69/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37bee17dfaf8cc2e87ddeb02f3556ef71221a59e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.2_e03f5e464ab41fd0fad7805262500096c6f920d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/f7c89de4a77e2974f81b1115fbbe5de3201480c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="af13a350b71b437ebf4be335d02a8f785c39b111">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_724c8d6dc27d1fede7c2e1cd15f2c04df9017e80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/aa7e5e822abe04d3c2f18dee2107fe91ba4a53b5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c73e2a93e00abd240e495c1e62217e53904a3f3">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0d09af29263ca5eeea5fd207043ee54cb726674d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/a0d57e5b5bcb1e581d46581bac45ad9097ffce3e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3ac08c35419ab7cf9146969de471768dbe502f0f">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_03aa761c6fe7b677f88dbe29b5a3e07b1af7d73a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/34ac47a8156a58b459423f5d4b20d9757257b030/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2508647d6bb5638c9e7a2be43f6ac6dccaceffc9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/fbc9e0a569ceb434b7643f60cfa3a3a2aabdc505/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6b3430725095bd46b785e97bd34240826c27b4db">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bede716e92794b124bb267186be706a241262b59/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/0b9317fa7645f00589f594dcc9318ff3803b5417/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e3c7e8ff9f476d0d93ee7b046fbe8037a2b822c0">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5953c9177175c52cc87b82a826200fb9f136ea4f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/suxin/.android/build-cache/14b5b883f8030a3da270423ec177a23a584dd1ca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e5b429c146094a612134910688d169ec08deeefb">
+        <dex dex="/Users/suxin/Desktop/MessageCube_SMS/Messaging/build/intermediates/transforms/dex/debug/folders/1000/10/classes_651d82834c71d002ee09c7d47f2201b640c07176/classes.dex" />
+    </item>
+
+</items>

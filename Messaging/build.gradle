@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+apply plugin: 'io.fabric'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId 'mobi.messagecube.app'
+        versionCode 352 // Internal to developers
+        versionName '3.1.3'  // Open to users
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility rootProject.ext.sourceCompatibility
+        targetCompatibility rootProject.ext.targetCompatibility
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'jni/Android.mk'
+        }
+    }
+
+    // link giflib
+    externalNativeBuild {
+        ndkBuild {
+            path '../giflib/Android.mk'
+        }
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable "ResourceType"
+        disable 'ValidFragment'
+    }
+
+    aaptOptions {
+        noCompress 'apk'
+    }
+}
+
+// TODO: add libs to dependency search paths.
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url "https://maven.google.com/"}
+    }
+}
+
+dependencies {
+    compile project(':photoviewer')
+    compile project(':chips')
+    compile project(':libphonenumber')
+    compile project(':colorpicker')
+    compile project(':vcard')
+    compile project(':ex_common')
+    compile project(':ex_framesequence')
+
+    // TODO: import mobi.messagecube.sdk
+    compile project(':mobi.messagecube.sdk')
+    // compile (name: 'mobi.messagecube.sdk-ui-1.4.0', ext: 'aar')
+    compile (name: 'mobi.messagecube.sdk-database-1.4.0', ext: 'aar')
+
+
+
+
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile "com.android.support:support-v4:${android_support_lib_version}"
+    compile "com.android.support:appcompat-v7:${android_support_lib_version}"
+    compile "com.android.support:support-v13:${android_support_lib_version}"
+    compile "com.android.support:recyclerview-v7:${android_support_lib_version}"
+    compile "com.android.support:palette-v7:${android_support_lib_version}"
+    compile 'com.google.guava:guava:23.0-android'
+
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+    compile 'com.jakewharton:butterknife:8.0.1'
+    compile 'com.squareup.picasso:picasso:2.3.2'
+
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.google.android.gms:play-services:11.0.4'
+}

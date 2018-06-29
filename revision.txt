@@ -1,0 +1,9 @@
+android-7.1.2_r33
+
+git clone https://android.googlesource.com/platform/packages/apps/Messaging
+git clone https://android.googlesource.com/platform/frameworks/opt/vcard
+git clone https://android.googlesource.com/platform/frameworks/opt/chips
+git clone https://android.googlesource.com/platform/frameworks/opt/photoviewer
+git clone https://android.googlesource.com/platform/external/libphonenumber
+git clone https://android.googlesource.com/platform/frameworks/opt/colorpicker
+git clone https://android.googlesource.com/platform/frameworks/ex

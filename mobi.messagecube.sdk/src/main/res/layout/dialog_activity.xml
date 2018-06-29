@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0000000" >
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:clipChildren="false"
+        android:overScrollMode="never"
+         />
+
+    <!-- app:viewUpdater="mobi.messagecube.sdk.cards.CardsUpdater -->
+    <!--
+    app:viewUpdater="mobi.messagecube.sdk.cards.CardsUpdater"
+    app:activeCardLeftOffset="10dp"
+    app:cardWidth="380dp"
+    -->
+
+</RelativeLayout>

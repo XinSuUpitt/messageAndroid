@@ -1,0 +1,57 @@
+{
+  "buildFiles": [
+    "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Android.mk",
+    "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Application.mk"
+  ],
+  "cleanCommands": [
+    "/Users/suxin/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-9 NDK_OUT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/lib clean"
+  ],
+  "libraries": {
+    "framesequence-release-x86": {
+      "buildCommand": "/Users/suxin/Library/Android/sdk/ndk-bundle/ndk-build NDK_PROJECT_PATH\u003dnull APP_BUILD_SCRIPT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Android.mk NDK_APPLICATION_MK\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Application.mk APP_ABI\u003dx86 NDK_ALL_ABIS\u003dx86 NDK_DEBUG\u003d0 APP_PLATFORM\u003dandroid-9 NDK_OUT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/obj NDK_LIBS_OUT\u003d/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/lib /Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/obj/local/x86/libframesequence.so",
+      "toolchain": "toolchain-x86",
+      "abi": "x86",
+      "artifactName": "framesequence",
+      "files": [
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/BitmapDecoderJNI.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/FrameSequence.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/FrameSequenceJNI.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/FrameSequence_gif.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/JNIHelpers.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Registry.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        },
+        {
+          "src": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni/Stream.cpp",
+          "flags": "\"-gcc-toolchain\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/darwin-x86_64\" \"-target\" \"i686-none-linux-android\" \"-ffunction-sections\" \"-funwind-tables\" \"-fstack-protector-strong\" \"-fPIC\" \"-Wno-invalid-command-line-argument\" \"-Wno-unused-command-line-argument\" \"-no-canonical-prefixes\" \"-g\" \"-fno-exceptions\" \"-fno-rtti\" \"-O2\" \"-DNDEBUG\" \"-Iexternal/giflib\" \"-I/Users/suxin/Library/Android/sdk/ndk-bundle/sources/cxx-stl/system/include\" \"-I/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/jni\" \"-D__ARM_HAVE_NEON\u003d1\" \"-DANDROID\" \"-Wall\" \"-Wno-unused-parameter\" \"-Wno-unused-variable\" \"-Wno-overloaded-virtual\" \"-fvisibility\u003dhidden\" \"-D__ANDROID_API__\u003d14\" \"-Wa,--noexecstack\" \"-Wformat\" \"-Werror\u003dformat-security\" \"-mstackrealign\" \"--sysroot\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot\" \"-isystem\" \"/Users/suxin/Library/Android/sdk/ndk-bundle/sysroot/usr/include/i686-linux-android\""
+        }
+      ],
+      "output": "/Users/suxin/Desktop/MessageCube_SMS/ex_framesequence/build/intermediates/ndkBuild/release/obj/local/x86/libframesequence.so"
+    }
+  },
+  "toolchains": {
+    "toolchain-x86": {
+      "cppCompilerExecutable": "/Users/suxin/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

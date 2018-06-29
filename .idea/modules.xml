@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MessageCube_SMS.iml" filepath="$PROJECT_DIR$/MessageCube_SMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Messaging/Messaging.iml" filepath="$PROJECT_DIR$/Messaging/Messaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chips/chips.iml" filepath="$PROJECT_DIR$/chips/chips.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorpicker/colorpicker.iml" filepath="$PROJECT_DIR$/colorpicker/colorpicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex_common/ex_common.iml" filepath="$PROJECT_DIR$/ex_common/ex_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ex_framesequence/ex_framesequence.iml" filepath="$PROJECT_DIR$/ex_framesequence/ex_framesequence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libphonenumber/libphonenumber.iml" filepath="$PROJECT_DIR$/libphonenumber/libphonenumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobi.messagecube.sdk/mobi.messagecube.sdk.iml" filepath="$PROJECT_DIR$/mobi.messagecube.sdk/mobi.messagecube.sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photoviewer/photoviewer.iml" filepath="$PROJECT_DIR$/photoviewer/photoviewer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vcard/vcard.iml" filepath="$PROJECT_DIR$/vcard/vcard.iml" />
+    </modules>
+  </component>
+</project>
